@@ -20,7 +20,7 @@ namespace StudentExercisesWebApp.Models
         public string LastName { get; set; }
 
         [Display(Name = "Student's Cohort")]
-        [Required(ErrorMessage ="Please select a corhort")]
+        [Required(ErrorMessage ="Please select a cohort")]
         public int CohortId { get; set; }
 
         public virtual Cohort Cohort { get; set; }

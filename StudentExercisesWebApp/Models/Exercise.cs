@@ -19,6 +19,7 @@ namespace StudentExercisesWebApp.Models
         [Required]
         public string Language { get; set; }
 
+        [Display(Name= "Assigned Students")]
         public virtual ICollection<StudentExercise> StudentExercises { get; set; }
     }
 }

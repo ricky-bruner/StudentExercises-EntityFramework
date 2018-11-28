@@ -16,6 +16,15 @@
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Students)
+        </dt>
+        <dd>
+            @foreach (Student student in Model.Students) 
+             { 
+                <span>@student.FirstName @student.LastName</span><br />
+             }
+        </dd>
     </dl>
 </div>
 <div>

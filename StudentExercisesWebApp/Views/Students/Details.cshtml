@@ -28,6 +28,16 @@
         <dd>
             @Html.DisplayFor(model => model.Cohort.Name)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentExercises)
+        </dt>
+        <dd>
+            @foreach (StudentExercise se in Model.StudentExercises)
+            {
+                <span>@se.Exercise.Name</span><br />
+
+            }
+        </dd>
     </dl>
 </div>
 <div>
